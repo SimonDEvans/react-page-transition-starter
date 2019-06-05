@@ -1,0 +1,17 @@
+@import '../../styles/config/Config';
+
+.nav {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+
+  &__link {
+    display: inline-block;
+    margin-right: 10px;
+
+    &.active {
+      color: hotpink;
+    }
+  }
+}

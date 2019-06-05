@@ -1,0 +1,30 @@
+@import '../styles/config/Config';
+
+// Set page transitions here
+.page {
+  transition: opacity 1000ms ease-in-out, transform 300ms ease-in-out;
+  opacity: 1;
+  padding: 100px 50px 50px;
+  min-height: 100vh;
+
+  &-enter {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+
+    &-active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    &-done {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transform: none;
+    }
+  }
+
+  &-exit {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+}

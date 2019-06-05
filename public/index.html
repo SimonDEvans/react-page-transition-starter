@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>React page transition starter</title>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+
+  <!-- Add fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:900|Muli:500&display=block" rel="stylesheet">
+
+</head>
+<body>
+  <div id="root"></div>
+  <noscript>This website requires JavaScript in order to run. Please enable it or use a modern browser.</noscript>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('%PUBLIC_URL%/service-worker.js').then(function(registration) {
+      }).catch(function(err) {
+        console.log( 'ServiceWorker registration failed. ' + err);
+      });
+    }
+  </script>
+</body>
+</html>
